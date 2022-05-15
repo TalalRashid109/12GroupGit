@@ -1,0 +1,16 @@
+/* create a database for student records */
+CREATE DATABASE students;
+
+/* use the students to create a table to hold information of the students*/
+USE students;
+
+/* create a table with name Records that holds student id, student name, module_id, module_name, module_leader and module grade for each student */
+CREATE TABLE students.records
+    (
+      STUDENT_ID INT  NOT NULL UNIQUE,
+      STUDENT_NAME VARCHAR(255)  NOT NULL,
+      MODULE_ID VARCHAR(255) NOT NULL,
+	  MODULE_NAME VARCHAR(255) NOT NULL, 
+	  MODULE_LEADER VARCHAR(255) NOT NULL,
+	  MODULE_GRADE INT NOT NULL
+    );
